@@ -10,9 +10,14 @@ class ComposerStaticInit2500e9d34ec0b8dd4d9e24bb779f0b67
         '45e8c92354af155465588409ef796dbc' => __DIR__ . '/..' . '/bcosca/fatfree/lib/base.php',
     );
 
+    public static $classMap = array (
+        'Validate' => __DIR__ . '/..' . '/geofmureithi/f3-validate/lib/validate.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->classMap = ComposerStaticInit2500e9d34ec0b8dd4d9e24bb779f0b67::$classMap;
 
         }, null, ClassLoader::class);
     }

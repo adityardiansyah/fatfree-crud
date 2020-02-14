@@ -1,5 +1,6 @@
 {
     "require": {
-        "bcosca/fatfree": "^3.7"
+        "bcosca/fatfree": "^3.7",
+        "geofmureithi/f3-validate": "^1.1"
     }
 }

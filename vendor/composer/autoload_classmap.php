@@ -6,4 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Validate' => $vendorDir . '/geofmureithi/f3-validate/lib/validate.php',
 );

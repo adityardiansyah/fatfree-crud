@@ -7,6 +7,12 @@
 
     <div class="row">
         <div class="col-12">
+            <?php if ($message): ?>
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong><?= ($message) ?></strong>
+            </div>
+            <?php endif; ?>
             <div class="card">
                 <div class="card-body">
                         <table class="table table">
